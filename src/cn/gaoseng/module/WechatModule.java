@@ -93,7 +93,7 @@ public class WechatModule {
 //			Tianqi qianqi = new Tianqi();
 //			qianqi = Qihou.queryTianqi("101221704");
 //			System.out.print(qianqi.getCity());
-			tmp.append("欢迎您访问高僧网[呲牙]   施主 今年财运滚滚来[色]");
+			tmp.append("施主 今年财运滚滚来[色]");
 //			tmp.append("九华山实时温度: " + qianqi.getTemp());
 //			tmp.append("  相对湿度: " + qianqi.getSd());
 //			tmp.append("  风力情况: " + qianqi.getWd());
