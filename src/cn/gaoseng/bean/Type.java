@@ -3,11 +3,9 @@ package cn.gaoseng.bean;
 import org.nutz.dao.entity.annotation.*;
 
 /**
- * 
- * @author howe
- *
- */
-@Table("gs_qiuqian_type")
+* 
+*/
+@Table("gs_common_type")
 public class Type {
 
 	/**
@@ -16,21 +14,23 @@ public class Type {
 	@Id
 	@Column("id")
 	private Integer id;
-	public Integer getId() {
+
+	public Integer getid() {
 		return id;
 	}
-	public void setId(Integer id) {
+	public void setid(Integer id) {
 		this.id = id;
 	}
 	/**
-	 * 类型名称
+	 * 类型名
 	 */
 	@Column("typeName")
 	private String typeName;
-	public String getTypeName() {
+
+	public String gettypeName() {
 		return typeName;
 	}
-	public void setTypeName(String typeName) {
+	public void settypeName(String typeName) {
 		this.typeName = typeName;
 	}
 	/**
@@ -38,10 +38,11 @@ public class Type {
 	 */
 	@Column("parentId")
 	private Integer parentId;
-	public Integer getParentId() {
+
+	public Integer getparentId() {
 		return parentId;
 	}
-	public void setParentId(Integer parentId) {
+	public void setparentId(Integer parentId) {
 		this.parentId = parentId;
 	}
 }

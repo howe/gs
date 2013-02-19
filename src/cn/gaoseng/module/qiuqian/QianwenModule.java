@@ -1,4 +1,4 @@
-package cn.gaoseng.module;
+package cn.gaoseng.module.qiuqian;
 
 import java.util.HashMap;
 import java.util.List;
@@ -13,11 +13,11 @@ import org.nutz.service.EntityService;
 import org.nutz.log.Log;
 import org.nutz.log.Logs;
 
-import cn.gaoseng.bean.Type;
+import cn.gaoseng.bean.qiuqian.Qianwen;
 
-@At("/CommonType")
+@At("/QiuqianQianwen")
 @IocBean(fields={"dao"})
-public class TypeModule extends EntityService<Type>{
+public class QianwenModule extends EntityService<Qianwen>{
 
     private static final Log log = Logs.get();
 	
@@ -26,10 +26,10 @@ public class TypeModule extends EntityService<Type>{
 		if (rows < 1)
 			rows = 10;
 		Pager pager = dao().createPager(page, rows);
-		List<Type> list = dao().query(Type.class, null, pager);
+		List<Qianwen> list = dao().query(Qianwen.class, null, pager);
 		Map<String, Object> map = new HashMap<String, Object>();
 		if (pager != null) {
-			pager.setRecordCount(dao().count(Type.class));
+			pager.setRecordCount(dao().count(Qianwen.class));
 			map.put("pager", pager);
 		}
 		map.put("list", list);
@@ -37,7 +37,7 @@ public class TypeModule extends EntityService<Type>{
 	}
 	
 	@At
-	public boolean add(@Param("..") Type obj){
+	public boolean add(@Param("..") Qianwen obj){
 		try{
 			dao().insert(obj);
 			return true;
@@ -49,7 +49,7 @@ public class TypeModule extends EntityService<Type>{
 	}
 	
 	@At
-	public boolean delete(@Param("..") Type obj){
+	public boolean delete(@Param("..") Qianwen obj){
 		try{
 			dao().delete(obj);
 			return true;
@@ -61,7 +61,7 @@ public class TypeModule extends EntityService<Type>{
 	}
 	
 	@At
-	public boolean update(@Param("..") Type obj){
+	public boolean update(@Param("..") Qianwen obj){
 		try{
 			dao().update(obj);
 			return true;

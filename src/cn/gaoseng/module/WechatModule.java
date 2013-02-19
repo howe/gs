@@ -3,12 +3,24 @@ package cn.gaoseng.module;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
+import org.nutz.dao.Dao;
+import org.nutz.dao.Sqls;
+import org.nutz.dao.sql.Sql;
+import org.nutz.dao.sql.SqlCallback;
 import org.nutz.ioc.loader.annotation.IocBean;
 import org.nutz.log.Log;
 import org.nutz.log.Logs;
@@ -18,9 +30,7 @@ import org.nutz.mvc.annotation.GET;
 import org.nutz.mvc.annotation.Ok;
 import org.nutz.mvc.annotation.POST;
 
-import cn.gaoseng.bean.Tianqi;
 import cn.gaoseng.tool.EncoderHelper;
-import cn.gaoseng.tool.Qihou;
 
 /**
  * www.gaoseng.cn 微信自动服务模块
@@ -32,9 +42,16 @@ import cn.gaoseng.tool.Qihou;
 public class WechatModule {
 
 	private static final Log log = Logs.get();
+	private Dao dao;
 	private static String TOKEN = "b6c848973fa03845930136a60f67a3c7";
+	/*
+	 * 文字消息
+	 */
 	private static final String RESPONSE_TXT = "<xml><ToUserName><![CDATA[%s]]></ToUserName><FromUserName><![CDATA[%s]]></FromUserName><CreateTime>%s</CreateTime><MsgType><![CDATA[%s]]></MsgType><Content><![CDATA[%s]]></Content><FuncFlag>0</FuncFlag></xml>";
-
+	/*
+	 * 图文消息
+	 */
+	private static final String RESPONSE_IMAGE_TXT = "<xml><ToUserName><![CDATA[%s]]></ToUserName><FromUserName><![CDATA[%s]]></FromUserName><CreateTime>%s</CreateTime><MsgType><![CDATA[news]]></MsgType><ArticleCount>1</ArticleCount><Articles><item><Title><![CDATA[%s]]></Title> <Description><![CDATA[%s]]></Description><PicUrl><![CDATA[%s]]></PicUrl><Url><![CDATA[%s]]></Url></item></Articles><FuncFlag>1</FuncFlag></xml>";
 	// 校验请求是否来自微信服务器
 	@At("/wechat/gaoseng")
 	@GET
@@ -93,20 +110,73 @@ public class WechatModule {
 //			Tianqi qianqi = new Tianqi();
 //			qianqi = Qihou.queryTianqi("101221704");
 //			System.out.print(qianqi.getCity());
-			tmp.append("施主 今年财运滚滚来[色]");
+//			tmp.append("施主 今年财运滚滚来[色]");
 //			tmp.append("九华山实时温度: " + qianqi.getTemp());
 //			tmp.append("  相对湿度: " + qianqi.getSd());
 //			tmp.append("  风力情况: " + qianqi.getWd());
 //			tmp.append("(" + qianqi.getWs() + ")");
 //			tmp.append("  检测时间: " + qianqi.getTime());
 
-			out.printf(	RESPONSE_TXT,
-						fromUserName,
-						toUserName,
-						System.currentTimeMillis(),
-						"text",
-						tmp);
+			Date date = new Date();
+			DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+			
+			Sql sql1 = Sqls.create("SELECT t.* FROM gs_qiuqian_result t WHERE t.openId = @OPENID AND t.createTime = @CREATETIME");
+			sql1.params().set("CREATETIME", format.format(date).substring(0, 10));
+			sql1.params().set("OPENID", fromUserName);
+			sql1.setCallback(new SqlCallback() {
+				public Object invoke(Connection conn, ResultSet rs, Sql sql1) throws SQLException {
+					Map<String, String> map = new HashMap<String, String>();
+					while (rs.next())
+						map.put("qwid", rs.getString("qwid"));
+					return map;
+				}
+			});
+			dao.execute(sql1);	
+			Map<String, String> map = sql1.getObject(HashMap.class);
+			if (map.size() == 0){
+				String qwId = cn.gaoseng.tool.Lottery.getLottery("1");
+				Sql sql2 = Sqls.create("SELECT t.* FROM gs_qiuqian_qianwen t WHERE t.id=@ID");
+				sql2.params().set("ID", qwId);
 
+				Sql sql3 = Sqls.create("insert into gs_qiuqian_result(openId,createTime,qwId) Values(@OPENID,@CREATETIME,@QWID)");
+				sql3.params().set("QWID", qwId);
+				sql3.params().set("OPENID", fromUserName);
+				sql3.params().set("CREATETIME", format.format(date).substring(0, 10));
+				sql2.setCallback(new SqlCallback() {
+					public Object invoke(Connection conn, ResultSet rs, Sql sql2) throws SQLException {
+						Map<String, String> map1 = new HashMap<String, String>();
+						while (rs.next()){
+							map1.put("id", rs.getString("id"));
+							map1.put("title", rs.getString("title"));
+							map1.put("story", rs.getString("story"));
+							map1.put("jieqian", rs.getString("jieqian"));
+							map1.put("picurl", rs.getString("picurl"));
+							map1.put("typeid", rs.getString("typeid"));
+						}
+						return map1;
+					}
+				});
+				dao.execute(sql2, sql3);	
+				Map<String, String> map1 = sql2.getObject(HashMap.class);
+				if (map.size() == 0){
+					out.printf(	RESPONSE_TXT,
+							fromUserName,
+							toUserName,
+							System.currentTimeMillis(),
+							"text",
+							"欢迎您访问高僧网[呲牙]   在线求签 请输入 qq或者求签");
+				}else{
+					out.printf(	RESPONSE_IMAGE_TXT,
+							fromUserName,
+							toUserName,
+							System.currentTimeMillis(),
+							"text",
+							tmp);
+				}
+			}else{
+				
+			}
+			
 		} else {
 
 			out.printf(	RESPONSE_TXT,
