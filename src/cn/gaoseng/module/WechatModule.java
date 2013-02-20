@@ -105,7 +105,7 @@ public class WechatModule {
 		 */
 		if (content.toLowerCase().equals("qq") || content.equals("求签")) {
 
-			StringBuilder tmp = new StringBuilder();
+//			StringBuilder tmp = new StringBuilder();
 //
 //			Tianqi qianqi = new Tianqi();
 //			qianqi = Qihou.queryTianqi("101221704");
@@ -148,7 +148,7 @@ public class WechatModule {
 						while (rs.next()){
 							map1.put("id", rs.getString("id"));
 							map1.put("title", rs.getString("title"));
-							map1.put("story", rs.getString("story"));
+							map1.put("url", rs.getString("url"));
 							map1.put("jieqian", rs.getString("jieqian"));
 							map1.put("picurl", rs.getString("picurl"));
 							map1.put("typeid", rs.getString("typeid"));
@@ -158,7 +158,7 @@ public class WechatModule {
 				});
 				dao.execute(sql2, sql3);	
 				Map<String, String> map1 = sql2.getObject(HashMap.class);
-				if (map.size() == 0){
+				if (map1.size() == 0){
 					out.printf(	RESPONSE_TXT,
 							fromUserName,
 							toUserName,
@@ -166,15 +166,55 @@ public class WechatModule {
 							"text",
 							"欢迎您访问高僧网[呲牙]   在线求签 请输入 qq或者求签");
 				}else{
+					
 					out.printf(	RESPONSE_IMAGE_TXT,
 							fromUserName,
 							toUserName,
 							System.currentTimeMillis(),
-							"text",
-							tmp);
+							map1.get("title"), 
+							map1.get("jieqian"), 
+							map1.get("picurl"),
+							map1.get("url")
+							);
 				}
 			}else{
-				
+				Sql sql4 = Sqls.create("SELECT t.* FROM gs_qiuqian_qianwen t WHERE t.id=@ID");
+				sql4.params().set("ID", map.get("id"));
+				sql4.setCallback(new SqlCallback() {
+					public Object invoke(Connection conn, ResultSet rs, Sql sql4) throws SQLException {
+						Map<String, String> map2 = new HashMap<String, String>();
+						while (rs.next()){
+							map2.put("id", rs.getString("id"));
+							map2.put("title", rs.getString("title"));
+							map2.put("url", rs.getString("url"));
+							map2.put("jieqian", rs.getString("jieqian"));
+							map2.put("picurl", rs.getString("picurl"));
+							map2.put("typeid", rs.getString("typeid"));
+						}
+						return map2;
+					}
+				});
+				dao.execute(sql4);	
+				Map<String, String> map2 = sql4.getObject(HashMap.class);				
+				if (map2.size() == 0){
+					out.printf(	RESPONSE_TXT,
+							fromUserName,
+							toUserName,
+							System.currentTimeMillis(),
+							"text",
+							"欢迎您访问高僧网[呲牙]   在线求签 请输入 qq或者求签");
+				}else{
+					
+					out.printf(	RESPONSE_IMAGE_TXT,
+							fromUserName,
+							toUserName,
+							System.currentTimeMillis(),
+							map2.get("title"),
+							map2.get("jieqian"),
+							map2.get("picurl"),
+							map2.get("url")
+							);
+				}
 			}
 			
 		} else {

@@ -15,10 +15,10 @@ public class Qianwen {
 	@Column("id")
 	private Integer id;
 
-	public Integer getid() {
+	public Integer getId() {
 		return id;
 	}
-	public void setid(Integer id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	/**
@@ -27,23 +27,23 @@ public class Qianwen {
 	@Column("title")
 	private String title;
 
-	public String gettitle() {
+	public String getTitle() {
 		return title;
 	}
-	public void settitle(String title) {
+	public void setTitle(String title) {
 		this.title = title;
 	}
 	/**
-	 * 签文故事
+	 * 签文地址
 	 */
-	@Column("story")
-	private String story;
+	@Column("url")
+	private String url;
 
-	public String getstory() {
-		return story;
+	public String getUrl() {
+		return url;
 	}
-	public void setstory(String story) {
-		this.story = story;
+	public void setUrl(String url) {
+		this.url = url;
 	}
 	/**
 	 * 解签
@@ -51,10 +51,10 @@ public class Qianwen {
 	@Column("jieqian")
 	private String jieqian;
 
-	public String getjieqian() {
+	public String getJieqian() {
 		return jieqian;
 	}
-	public void setjieqian(String jieqian) {
+	public void setJieqian(String jieqian) {
 		this.jieqian = jieqian;
 	}
 	/**
@@ -63,10 +63,10 @@ public class Qianwen {
 	@Column("picUrl")
 	private String picUrl;
 
-	public String getpicUrl() {
+	public String getPicUrl() {
 		return picUrl;
 	}
-	public void setpicUrl(String picUrl) {
+	public void setPicUrl(String picUrl) {
 		this.picUrl = picUrl;
 	}
 	/**
@@ -75,10 +75,10 @@ public class Qianwen {
 	@Column("typeId")
 	private Integer typeId;
 
-	public Integer gettypeId() {
+	public Integer getTypeId() {
 		return typeId;
 	}
-	public void settypeId(Integer typeId) {
+	public void setTypeId(Integer typeId) {
 		this.typeId = typeId;
 	}
 	@Override
