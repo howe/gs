@@ -3585,3 +3585,508 @@ beans = ["resultModule", "qianwenModule", "typeModule", "wechatModule"]
 2013-02-20 23:55:10,655 [main] DEBUG org.nutz.mvc.impl.NutMessageLoader - Load Messages in 2 resource : [[NutResource[blog.properties], NutResource[en_US/blog.properties]]]
 2013-02-20 23:55:10,657 [main] DEBUG org.nutz.mvc.impl.NutMessageLoader - Message Loaded, size = 2
 2013-02-20 23:55:10,658 [main] INFO  org.nutz.mvc.impl.NutLoading - Nutz.Mvc[nutz] is up in 345ms
+2013-02-21 00:50:27,462 [main] INFO  org.nutz.log.Logs - Nutz is licensed under the Apache License, Version 2.0 .
+Report bugs : https://github.com/nutzam/nutz/issues
+2013-02-21 00:50:27,698 [main] DEBUG org.nutz.resource.Scans - Locations for Scans:
+[JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\959\1\.cp\lib\jetty-util-6.1.26.jar], FileSystemResourceLocation [root=D:\project\gaoseng\build\classes], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\959\1\.cp\lib\servlet-api-2.5-20081211.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\959\1\.cp\lib\jetty-6.1.26.jar], JarResourceLocation [jarPath=file:/D:/project/gaoseng/WebContent/WEB-INF/lib/nutz-1.b.47-jdk6.jar], FileSystemResourceLocation [root=D:\project\gaoseng\.], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\959\1\.cp\lib\jsp-api-2.1.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\959\1\.cp\lib\jsp-2.1.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\959\1\.cp\lib\run-jetty-run-bootstrap.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\959\1\.cp\lib\core-3.1.1.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\959\1\.cp\lib\jetty-management-6.1.26.jar]]
+2013-02-21 00:50:27,699 [main] INFO  org.nutz.resource.impl.ErrorResourceLocation - ErrorResourceLocation [loc=D:\project\gaoseng\WebContent\WEB-INF\classes], maybe it is in your classpath, but not exist
+2013-02-21 00:50:27,883 [main] DEBUG org.nutz.resource.Scans - Locations for Scans:
+[JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\httpclient-4.2.3.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\httpmime-4.2.3.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\fastjson-1.1.27.jar], FileSystemResourceLocation [root=D:\project\gaoseng\.], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\mysql-connector-java-5.1.23-bin.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\druid-0.2.11.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\959\1\.cp\lib\jsp-api-2.1.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\fluent-hc-4.2.3.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\959\1\.cp\lib\core-3.1.1.jar], FileSystemResourceLocation [root=D:\project\gaoseng\build\classes], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\959\1\.cp\lib\jetty-util-6.1.26.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\commons-codec-1.6.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\959\1\.cp\lib\servlet-api-2.5-20081211.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\959\1\.cp\lib\jetty-6.1.26.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\dom4j-1.6.1.jar], JarResourceLocation [jarPath=file:/D:/project/gaoseng/WebContent/WEB-INF/lib/nutz-1.b.47-jdk6.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\nutz-1.b.47-jdk6.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\log4j-1.2.17.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\commons-logging-1.1.1.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\httpclient-cache-4.2.3.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\httpcore-4.2.3.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\959\1\.cp\lib\run-jetty-run-bootstrap.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\959\1\.cp\lib\jsp-2.1.jar], ErrorResourceLocation [loc=D:\project\gaoseng\WebContent\WEB-INF\classes], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\959\1\.cp\lib\jetty-management-6.1.26.jar]]
+2013-02-21 00:50:27,890 [main] DEBUG org.nutz.mvc.config.AbstractNutConfig - MainModule: <cn.gaoseng.MainModule>
+2013-02-21 00:50:27,920 [main] DEBUG org.nutz.mvc.config.AbstractNutConfig - Loading by class org.nutz.mvc.impl.NutLoading
+2013-02-21 00:50:27,922 [main] INFO  org.nutz.mvc.impl.NutLoading - Nutz Version : 1.b.47 
+2013-02-21 00:50:27,923 [main] INFO  org.nutz.mvc.impl.NutLoading - Nutz.Mvc[nutz] is initializing ...
+2013-02-21 00:50:27,923 [main] DEBUG org.nutz.mvc.impl.NutLoading - Web Container Information:
+2013-02-21 00:50:27,923 [main] DEBUG org.nutz.mvc.impl.NutLoading -  - Default Charset : UTF-8
+2013-02-21 00:50:27,924 [main] DEBUG org.nutz.mvc.impl.NutLoading -  - Current . path  : D:\project\gaoseng\.
+2013-02-21 00:50:27,924 [main] DEBUG org.nutz.mvc.impl.NutLoading -  - Java Version    : 1.7.0_15
+2013-02-21 00:50:27,924 [main] DEBUG org.nutz.mvc.impl.NutLoading -  - File separator  : \
+2013-02-21 00:50:27,924 [main] DEBUG org.nutz.mvc.impl.NutLoading -  - Timezone        : Asia/Shanghai
+2013-02-21 00:50:27,925 [main] DEBUG org.nutz.mvc.config.AbstractNutConfig - MainModule: <cn.gaoseng.MainModule>
+2013-02-21 00:50:27,926 [main] DEBUG org.nutz.mvc.impl.NutLoading - >> app.root = D:/project/gaoseng/WebContent
+2013-02-21 00:50:27,928 [main] DEBUG org.nutz.mvc.impl.NutLoading - @IocBy(org.nutz.mvc.ioc.provider.ComboIocProvider)
+2013-02-21 00:50:27,957 [main] DEBUG org.nutz.resource.Scans - Found 3 resource by src( ioc/ ) , regex( ^(.+[.])(js|json)$ )
+2013-02-21 00:50:27,970 [main] DEBUG org.nutz.ioc.loader.json.JsonLoader - Loaded 11 bean define from path=[ioc/] --> [txREPEATABLE_READ, dataSource, txREAD_COMMITTED, txNONE, dao, json, txSERIALIZABLE, $aop, txREAD_UNCOMMITTED, log, upload]
+2013-02-21 00:50:27,980 [main] DEBUG org.nutz.resource.Scans - Found 19 resource by src( cn/gaoseng/ ) , regex( ^.+[.]class$ )
+2013-02-21 00:50:28,011 [main] DEBUG org.nutz.ioc.loader.annotation.AnnotationIocLoader - Found a Class with Ioc-Annotation : class cn.gaoseng.tool.Lottery
+2013-02-21 00:50:28,017 [main] DEBUG org.nutz.ioc.loader.annotation.AnnotationIocLoader - Found a Class with Ioc-Annotation : class cn.gaoseng.module.qiuqian.ResultModule
+2013-02-21 00:50:28,021 [main] DEBUG org.nutz.ioc.loader.annotation.AnnotationIocLoader - Found a Class with Ioc-Annotation : class cn.gaoseng.module.TypeModule
+2013-02-21 00:50:28,022 [main] DEBUG org.nutz.ioc.loader.annotation.AnnotationIocLoader - Found a Class with Ioc-Annotation : class cn.gaoseng.module.WechatModule
+2013-02-21 00:50:28,032 [main] DEBUG org.nutz.ioc.loader.annotation.AnnotationIocLoader - Found a Class with Ioc-Annotation : class cn.gaoseng.module.qiuqian.QianwenModule
+2013-02-21 00:50:28,083 [main] DEBUG org.nutz.castor.Castors - Using 80 castor for Castors
+2013-02-21 00:50:28,086 [main] INFO  org.nutz.ioc.loader.annotation.AnnotationIocLoader - Scan complete ! Found 5 classes in 1 base-packages!
+beans = ["resultModule", "qianwenModule", "typeModule", "wechatModule", "lottery"]
+2013-02-21 00:50:28,092 [main] DEBUG org.nutz.mvc.config.AbstractNutConfig - MainModule: <cn.gaoseng.MainModule>
+2013-02-21 00:50:28,094 [main] INFO  org.nutz.mvc.impl.NutLoading - Build URL mapping by org.nutz.mvc.impl.UrlMappingImpl ...
+2013-02-21 00:50:28,095 [main] DEBUG org.nutz.mvc.impl.NutLoading - @Views(DefaultViewMaker)
+2013-02-21 00:50:28,171 [main] DEBUG org.nutz.mvc.impl.NutLoading - @ChainBy(org.nutz.mvc.impl.NutActionChainMaker)
+2013-02-21 00:50:28,175 [main] DEBUG org.nutz.mvc.impl.Loadings - module class location 'file:/D:/project/gaoseng/build/classes/'
+2013-02-21 00:50:28,175 [main] DEBUG org.nutz.mvc.impl.Loadings -  > scan 'cn.gaoseng'
+2013-02-21 00:50:28,180 [main] DEBUG org.nutz.resource.Scans - Found 19 resource by src( cn/gaoseng/ ) , regex( ^.+[.]class$ )
+2013-02-21 00:50:28,193 [main] DEBUG org.nutz.mvc.impl.Loadings -    >> add 'cn.gaoseng.tool.Lottery'
+2013-02-21 00:50:28,193 [main] DEBUG org.nutz.mvc.impl.Loadings -    >> add 'cn.gaoseng.module.qiuqian.ResultModule'
+2013-02-21 00:50:28,193 [main] DEBUG org.nutz.mvc.impl.Loadings -    >> add 'cn.gaoseng.module.TypeModule'
+2013-02-21 00:50:28,194 [main] DEBUG org.nutz.mvc.impl.Loadings -    >> add 'cn.gaoseng.module.WechatModule'
+2013-02-21 00:50:28,196 [main] DEBUG org.nutz.mvc.impl.Loadings -    >> add 'cn.gaoseng.module.qiuqian.QianwenModule'
+2013-02-21 00:50:28,211 [main] WARN  org.nutz.mvc.impl.processor.ViewProcessor - Not a good idea : Return String ,and using JsonView!! (Using @Ok("raw") or return map/list/pojo)--> WechatModule.checkSignature(...)
+2013-02-21 00:50:28,213 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/wechat/gaoseng'           >> WechatModule.checkSignature(...) : String     | @Ok(raw  ) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:50:28,213 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/wechat/gaoseng'           >> WechatModule.responseMsg(...)  : void       | @Ok(raw  ) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:50:28,214 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:50:28,214 [main] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Load definition
+2013-02-21 00:50:28,215 [main] DEBUG org.nutz.ioc.loader.map.MapLoader - Loading define for name=json
+2013-02-21 00:50:28,217 [main] DEBUG org.nutz.ioc.loader.combo.ComboIocLoader - Found IocObject(json) in IocLoader(JsonLoader@678468809)
+2013-02-21 00:50:28,217 [main] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Make...'json'<interface org.nutz.mvc.View>
+2013-02-21 00:50:28,219 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get '$aop'<interface org.nutz.ioc.aop.config.AopConfigration>
+2013-02-21 00:50:28,220 [main] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Load definition
+2013-02-21 00:50:28,220 [main] DEBUG org.nutz.ioc.loader.map.MapLoader - Loading define for name=$aop
+2013-02-21 00:50:28,223 [main] DEBUG org.nutz.ioc.loader.combo.ComboIocLoader - Found IocObject($aop) in IocLoader(JsonLoader@678468809)
+2013-02-21 00:50:28,223 [main] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Make...'$aop'<interface org.nutz.ioc.aop.config.AopConfigration>
+2013-02-21 00:50:28,224 [main] DEBUG org.nutz.ioc.impl.ScopeContext - Save object '$aop' to [app] 
+2013-02-21 00:50:28,238 [main] DEBUG org.nutz.ioc.aop.impl.DefaultMirrorFactory - class org.nutz.mvc.view.UTF8JsonView , no config to enable AOP.
+2013-02-21 00:50:28,238 [main] DEBUG org.nutz.ioc.impl.ScopeContext - Save object 'json' to [app] 
+2013-02-21 00:50:28,240 [main] DEBUG org.nutz.ioc.aop.impl.DefaultMirrorFactory - class org.nutz.json.JsonFormat , no config to enable AOP.
+2013-02-21 00:50:28,241 [main] DEBUG org.nutz.ioc.aop.impl.DefaultMirrorFactory - class org.nutz.json.JsonFormat , no config to enable AOP.
+2013-02-21 00:50:28,242 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/testit'                   >> Lottery.testIt(...)            : void       | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:50:28,249 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:50:28,250 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/add'                      >> ResultModule.add(...)          : boolean    | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:50:28,250 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:50:28,251 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/list'                     >> ResultModule.list(...)         : Object     | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:50:28,252 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:50:28,253 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/delete'                   >> ResultModule.delete(...)       : boolean    | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:50:28,254 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:50:28,255 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/update'                   >> ResultModule.update(...)       : boolean    | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:50:28,256 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:50:28,256 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/add'                      >> QianwenModule.add(...)         : boolean    | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:50:28,256 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:50:28,257 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/list'                     >> QianwenModule.list(...)        : Object     | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:50:28,258 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:50:28,258 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/delete'                   >> QianwenModule.delete(...)      : boolean    | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:50:28,259 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:50:28,259 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/update'                   >> QianwenModule.update(...)      : boolean    | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:50:28,261 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:50:28,261 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/add'                      >> TypeModule.add(...)            : boolean    | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:50:28,261 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:50:28,262 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/list'                     >> TypeModule.list(...)           : Object     | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:50:28,263 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:50:28,263 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/delete'                   >> TypeModule.delete(...)         : boolean    | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:50:28,264 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:50:28,265 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/update'                   >> TypeModule.update(...)         : boolean    | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:50:28,265 [main] DEBUG org.nutz.mvc.impl.NutLoading - Localization: org.nutz.mvc.impl.NutMessageLoader('msg')  dft<>
+2013-02-21 00:50:28,268 [main] DEBUG org.nutz.resource.Scans - Found 2 resource by src( msg ) , regex( ^.+[.]properties$ )
+2013-02-21 00:50:28,268 [main] DEBUG org.nutz.mvc.impl.NutMessageLoader - Load Messages in 2 resource : [[NutResource[blog.properties], NutResource[en_US/blog.properties]]]
+2013-02-21 00:50:28,270 [main] DEBUG org.nutz.mvc.impl.NutMessageLoader - Message Loaded, size = 2
+2013-02-21 00:50:28,271 [main] INFO  org.nutz.mvc.impl.NutLoading - Nutz.Mvc[nutz] is up in 346ms
+2013-02-21 00:51:03,762 [main] INFO  org.nutz.log.Logs - Nutz is licensed under the Apache License, Version 2.0 .
+Report bugs : https://github.com/nutzam/nutz/issues
+2013-02-21 00:51:04,009 [main] DEBUG org.nutz.resource.Scans - Locations for Scans:
+[JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-annotations-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-rewrite-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jsp-impl-2.2.2.b05.0.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\javax.servlet.jsp-2.2.0.v201112011158.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-xml-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\org.objectweb.asm_3.3.1.v201101071600.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-servlet-8.1.2.v20120308.jar], FileSystemResourceLocation [root=D:\project\gaoseng\build\classes], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-plus-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-server-8.1.2.v20120308.jar], JarResourceLocation [jarPath=file:/D:/project/gaoseng/WebContent/WEB-INF/lib/nutz-1.b.47-jdk6.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-deploy-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-policy-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-servlets-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-websocket-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\servlet-api-3.0.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-webapp-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\javax.el-2.2.0.v201108011116.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\javax.servlet.jsp.jstl-1.2.0.v201105211821.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-continuation-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-jndi-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\run-jetty-run-bootstrap-jetty8.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-ajp-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\org.apache.jasper.glassfish-2.2.2.v201112011158.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-security-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-http-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\org.apache.taglibs.standard.glassfish-1.2.0.v201112081803.jar], FileSystemResourceLocation [root=D:\project\gaoseng\.], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-io-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\javax.annotation_1.1.0.v201105051105.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-client-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-util-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-jmx-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-overlay-deployer-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\com.sun.el-2.2.0.v201108011116.jar]]
+2013-02-21 00:51:04,010 [main] INFO  org.nutz.resource.impl.ErrorResourceLocation - ErrorResourceLocation [loc=D:\project\gaoseng\WebContent\WEB-INF\classes], maybe it is in your classpath, but not exist
+2013-02-21 00:51:04,174 [main] DEBUG org.nutz.resource.Scans - Locations for Scans:
+[JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\httpclient-4.2.3.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-annotations-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\fastjson-1.1.27.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-rewrite-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jsp-impl-2.2.2.b05.0.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\javax.servlet.jsp-2.2.0.v201112011158.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\mysql-connector-java-5.1.23-bin.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-xml-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\druid-0.2.11.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\org.objectweb.asm_3.3.1.v201101071600.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-servlet-8.1.2.v20120308.jar], FileSystemResourceLocation [root=D:\project\gaoseng\build\classes], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-plus-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-server-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\dom4j-1.6.1.jar], JarResourceLocation [jarPath=file:/D:/project/gaoseng/WebContent/WEB-INF/lib/nutz-1.b.47-jdk6.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-deploy-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-policy-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-servlets-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\nutz-1.b.47-jdk6.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-websocket-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\log4j-1.2.17.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\servlet-api-3.0.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\httpclient-cache-4.2.3.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-webapp-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\javax.el-2.2.0.v201108011116.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\javax.servlet.jsp.jstl-1.2.0.v201105211821.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-continuation-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-jndi-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\httpmime-4.2.3.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\run-jetty-run-bootstrap-jetty8.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-ajp-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\org.apache.jasper.glassfish-2.2.2.v201112011158.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-security-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-http-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\org.apache.taglibs.standard.glassfish-1.2.0.v201112081803.jar], FileSystemResourceLocation [root=D:\project\gaoseng\.], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-io-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\javax.annotation_1.1.0.v201105051105.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\fluent-hc-4.2.3.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\commons-codec-1.6.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-client-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-util-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-jmx-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-overlay-deployer-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\commons-logging-1.1.1.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\httpcore-4.2.3.jar], ErrorResourceLocation [loc=D:\project\gaoseng\WebContent\WEB-INF\classes], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\com.sun.el-2.2.0.v201108011116.jar]]
+2013-02-21 00:51:04,181 [main] DEBUG org.nutz.mvc.config.AbstractNutConfig - MainModule: <cn.gaoseng.MainModule>
+2013-02-21 00:51:04,205 [main] DEBUG org.nutz.mvc.config.AbstractNutConfig - Loading by class org.nutz.mvc.impl.NutLoading
+2013-02-21 00:51:04,207 [main] INFO  org.nutz.mvc.impl.NutLoading - Nutz Version : 1.b.47 
+2013-02-21 00:51:04,208 [main] INFO  org.nutz.mvc.impl.NutLoading - Nutz.Mvc[nutz] is initializing ...
+2013-02-21 00:51:04,208 [main] DEBUG org.nutz.mvc.impl.NutLoading - Web Container Information:
+2013-02-21 00:51:04,208 [main] DEBUG org.nutz.mvc.impl.NutLoading -  - Default Charset : UTF-8
+2013-02-21 00:51:04,209 [main] DEBUG org.nutz.mvc.impl.NutLoading -  - Current . path  : D:\project\gaoseng\.
+2013-02-21 00:51:04,209 [main] DEBUG org.nutz.mvc.impl.NutLoading -  - Java Version    : 1.7.0_15
+2013-02-21 00:51:04,209 [main] DEBUG org.nutz.mvc.impl.NutLoading -  - File separator  : \
+2013-02-21 00:51:04,209 [main] DEBUG org.nutz.mvc.impl.NutLoading -  - Timezone        : Asia/Shanghai
+2013-02-21 00:51:04,210 [main] DEBUG org.nutz.mvc.config.AbstractNutConfig - MainModule: <cn.gaoseng.MainModule>
+2013-02-21 00:51:04,210 [main] DEBUG org.nutz.mvc.impl.NutLoading - >> app.root = D:/project/gaoseng/WebContent
+2013-02-21 00:51:04,212 [main] DEBUG org.nutz.mvc.impl.NutLoading - @IocBy(org.nutz.mvc.ioc.provider.ComboIocProvider)
+2013-02-21 00:51:04,241 [main] DEBUG org.nutz.resource.Scans - Found 3 resource by src( ioc/ ) , regex( ^(.+[.])(js|json)$ )
+2013-02-21 00:51:04,254 [main] DEBUG org.nutz.ioc.loader.json.JsonLoader - Loaded 11 bean define from path=[ioc/] --> [txREPEATABLE_READ, dataSource, txREAD_COMMITTED, txNONE, dao, json, txSERIALIZABLE, $aop, txREAD_UNCOMMITTED, log, upload]
+2013-02-21 00:51:04,265 [main] DEBUG org.nutz.resource.Scans - Found 19 resource by src( cn/gaoseng/ ) , regex( ^.+[.]class$ )
+2013-02-21 00:51:04,294 [main] DEBUG org.nutz.ioc.loader.annotation.AnnotationIocLoader - Found a Class with Ioc-Annotation : class cn.gaoseng.module.WechatModule
+2013-02-21 00:51:04,308 [main] DEBUG org.nutz.ioc.loader.annotation.AnnotationIocLoader - Found a Class with Ioc-Annotation : class cn.gaoseng.module.qiuqian.ResultModule
+2013-02-21 00:51:04,311 [main] DEBUG org.nutz.ioc.loader.annotation.AnnotationIocLoader - Found a Class with Ioc-Annotation : class cn.gaoseng.tool.Lottery
+2013-02-21 00:51:04,312 [main] DEBUG org.nutz.ioc.loader.annotation.AnnotationIocLoader - Found a Class with Ioc-Annotation : class cn.gaoseng.module.TypeModule
+2013-02-21 00:51:04,313 [main] DEBUG org.nutz.ioc.loader.annotation.AnnotationIocLoader - Found a Class with Ioc-Annotation : class cn.gaoseng.module.qiuqian.QianwenModule
+2013-02-21 00:51:04,356 [main] DEBUG org.nutz.castor.Castors - Using 80 castor for Castors
+2013-02-21 00:51:04,359 [main] INFO  org.nutz.ioc.loader.annotation.AnnotationIocLoader - Scan complete ! Found 5 classes in 1 base-packages!
+beans = ["resultModule", "qianwenModule", "typeModule", "wechatModule", "lottery"]
+2013-02-21 00:51:04,365 [main] DEBUG org.nutz.mvc.config.AbstractNutConfig - MainModule: <cn.gaoseng.MainModule>
+2013-02-21 00:51:04,367 [main] INFO  org.nutz.mvc.impl.NutLoading - Build URL mapping by org.nutz.mvc.impl.UrlMappingImpl ...
+2013-02-21 00:51:04,368 [main] DEBUG org.nutz.mvc.impl.NutLoading - @Views(DefaultViewMaker)
+2013-02-21 00:51:04,431 [main] DEBUG org.nutz.mvc.impl.NutLoading - @ChainBy(org.nutz.mvc.impl.NutActionChainMaker)
+2013-02-21 00:51:04,435 [main] DEBUG org.nutz.mvc.impl.Loadings - module class location 'file:/D:/project/gaoseng/build/classes/'
+2013-02-21 00:51:04,435 [main] DEBUG org.nutz.mvc.impl.Loadings -  > scan 'cn.gaoseng'
+2013-02-21 00:51:04,440 [main] DEBUG org.nutz.resource.Scans - Found 19 resource by src( cn/gaoseng/ ) , regex( ^.+[.]class$ )
+2013-02-21 00:51:04,451 [main] DEBUG org.nutz.mvc.impl.Loadings -    >> add 'cn.gaoseng.module.WechatModule'
+2013-02-21 00:51:04,453 [main] DEBUG org.nutz.mvc.impl.Loadings -    >> add 'cn.gaoseng.module.qiuqian.ResultModule'
+2013-02-21 00:51:04,453 [main] DEBUG org.nutz.mvc.impl.Loadings -    >> add 'cn.gaoseng.tool.Lottery'
+2013-02-21 00:51:04,453 [main] DEBUG org.nutz.mvc.impl.Loadings -    >> add 'cn.gaoseng.module.TypeModule'
+2013-02-21 00:51:04,454 [main] DEBUG org.nutz.mvc.impl.Loadings -    >> add 'cn.gaoseng.module.qiuqian.QianwenModule'
+2013-02-21 00:51:04,462 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:04,462 [main] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Load definition
+2013-02-21 00:51:04,463 [main] DEBUG org.nutz.ioc.loader.map.MapLoader - Loading define for name=json
+2013-02-21 00:51:04,465 [main] DEBUG org.nutz.ioc.loader.combo.ComboIocLoader - Found IocObject(json) in IocLoader(JsonLoader@810440560)
+2013-02-21 00:51:04,466 [main] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Make...'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:04,468 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get '$aop'<interface org.nutz.ioc.aop.config.AopConfigration>
+2013-02-21 00:51:04,468 [main] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Load definition
+2013-02-21 00:51:04,468 [main] DEBUG org.nutz.ioc.loader.map.MapLoader - Loading define for name=$aop
+2013-02-21 00:51:04,470 [main] DEBUG org.nutz.ioc.loader.combo.ComboIocLoader - Found IocObject($aop) in IocLoader(JsonLoader@810440560)
+2013-02-21 00:51:04,470 [main] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Make...'$aop'<interface org.nutz.ioc.aop.config.AopConfigration>
+2013-02-21 00:51:04,471 [main] DEBUG org.nutz.ioc.impl.ScopeContext - Save object '$aop' to [app] 
+2013-02-21 00:51:04,486 [main] DEBUG org.nutz.ioc.aop.impl.DefaultMirrorFactory - class org.nutz.mvc.view.UTF8JsonView , no config to enable AOP.
+2013-02-21 00:51:04,486 [main] DEBUG org.nutz.ioc.impl.ScopeContext - Save object 'json' to [app] 
+2013-02-21 00:51:04,488 [main] DEBUG org.nutz.ioc.aop.impl.DefaultMirrorFactory - class org.nutz.json.JsonFormat , no config to enable AOP.
+2013-02-21 00:51:04,489 [main] DEBUG org.nutz.ioc.aop.impl.DefaultMirrorFactory - class org.nutz.json.JsonFormat , no config to enable AOP.
+2013-02-21 00:51:04,492 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/testit'                   >> Lottery.testIt(...)            : void       | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:04,500 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:04,501 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/add'                      >> ResultModule.add(...)          : boolean    | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:04,502 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:04,502 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/list'                     >> ResultModule.list(...)         : Object     | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:04,504 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:04,504 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/delete'                   >> ResultModule.delete(...)       : boolean    | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:04,506 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:04,506 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/update'                   >> ResultModule.update(...)       : boolean    | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:04,507 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:04,507 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/add'                      >> QianwenModule.add(...)         : boolean    | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:04,508 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:04,508 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/list'                     >> QianwenModule.list(...)        : Object     | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:04,509 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:04,509 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/delete'                   >> QianwenModule.delete(...)      : boolean    | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:04,510 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:04,511 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/update'                   >> QianwenModule.update(...)      : boolean    | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:04,512 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:04,513 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/add'                      >> TypeModule.add(...)            : boolean    | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:04,513 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:04,514 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/list'                     >> TypeModule.list(...)           : Object     | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:04,515 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:04,515 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/delete'                   >> TypeModule.delete(...)         : boolean    | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:04,516 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:04,516 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/update'                   >> TypeModule.update(...)         : boolean    | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:04,524 [main] WARN  org.nutz.mvc.impl.processor.ViewProcessor - Not a good idea : Return String ,and using JsonView!! (Using @Ok("raw") or return map/list/pojo)--> WechatModule.checkSignature(...)
+2013-02-21 00:51:04,524 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/wechat/gaoseng'           >> WechatModule.checkSignature(...) : String     | @Ok(raw  ) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:04,525 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/wechat/gaoseng'           >> WechatModule.responseMsg(...)  : void       | @Ok(raw  ) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:04,525 [main] DEBUG org.nutz.mvc.impl.NutLoading - Localization: org.nutz.mvc.impl.NutMessageLoader('msg')  dft<>
+2013-02-21 00:51:04,528 [main] DEBUG org.nutz.resource.Scans - Found 2 resource by src( msg ) , regex( ^.+[.]properties$ )
+2013-02-21 00:51:04,528 [main] DEBUG org.nutz.mvc.impl.NutMessageLoader - Load Messages in 2 resource : [[NutResource[blog.properties], NutResource[en_US/blog.properties]]]
+2013-02-21 00:51:04,530 [main] DEBUG org.nutz.mvc.impl.NutMessageLoader - Message Loaded, size = 2
+2013-02-21 00:51:04,531 [main] INFO  org.nutz.mvc.impl.NutLoading - Nutz.Mvc[nutz] is up in 321ms
+2013-02-21 00:51:07,361 [qtp1234909842-16] DEBUG org.nutz.mvc.impl.UrlMappingImpl - Found mapping for [GET] path=/testit : Lottery.testIt(...)
+2013-02-21 00:51:07,386 [qtp1234909842-16] DEBUG org.nutz.ioc.impl.NutIoc - Get 'lottery'<class cn.gaoseng.tool.Lottery>
+2013-02-21 00:51:07,386 [qtp1234909842-16] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Load definition
+2013-02-21 00:51:07,386 [qtp1234909842-16] DEBUG org.nutz.ioc.loader.combo.ComboIocLoader - Found IocObject(lottery) in IocLoader(AnnotationIocLoader@383952072)
+2013-02-21 00:51:07,386 [qtp1234909842-16] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Make...'lottery'<class cn.gaoseng.tool.Lottery>
+2013-02-21 00:51:07,388 [qtp1234909842-16] DEBUG org.nutz.ioc.impl.NutIoc - Get 'txREAD_COMMITTED'<interface org.nutz.aop.MethodInterceptor>
+2013-02-21 00:51:07,388 [qtp1234909842-16] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Load definition
+2013-02-21 00:51:07,388 [qtp1234909842-16] DEBUG org.nutz.ioc.loader.map.MapLoader - Loading define for name=txREAD_COMMITTED
+2013-02-21 00:51:07,388 [qtp1234909842-16] DEBUG org.nutz.ioc.loader.combo.ComboIocLoader - Found IocObject(txREAD_COMMITTED) in IocLoader(JsonLoader@810440560)
+2013-02-21 00:51:07,388 [qtp1234909842-16] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Make...'txREAD_COMMITTED'<interface org.nutz.aop.MethodInterceptor>
+2013-02-21 00:51:07,389 [qtp1234909842-16] DEBUG org.nutz.ioc.impl.ScopeContext - Save object 'txREAD_COMMITTED' to [app] 
+2013-02-21 00:51:07,391 [qtp1234909842-16] DEBUG org.nutz.aop.asm.AsmClassAgent - AsmClassAgent will define class in Version 50
+2013-02-21 00:51:07,409 [qtp1234909842-16] DEBUG org.nutz.ioc.impl.ScopeContext - Save object 'lottery' to [app] 
+2013-02-21 00:51:07,411 [qtp1234909842-16] DEBUG org.nutz.ioc.impl.NutIoc - Get 'dao'<null>
+2013-02-21 00:51:07,411 [qtp1234909842-16] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Load definition
+2013-02-21 00:51:07,411 [qtp1234909842-16] DEBUG org.nutz.ioc.loader.map.MapLoader - Loading define for name=dao
+2013-02-21 00:51:07,413 [qtp1234909842-16] DEBUG org.nutz.ioc.loader.combo.ComboIocLoader - Found IocObject(dao) in IocLoader(JsonLoader@810440560)
+2013-02-21 00:51:07,413 [qtp1234909842-16] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Make...'dao'<null>
+2013-02-21 00:51:07,422 [qtp1234909842-16] DEBUG org.nutz.ioc.aop.impl.DefaultMirrorFactory - class org.nutz.dao.impl.NutDao , no config to enable AOP.
+2013-02-21 00:51:07,423 [qtp1234909842-16] DEBUG org.nutz.ioc.impl.ScopeContext - Save object 'dao' to [app] 
+2013-02-21 00:51:07,431 [qtp1234909842-16] DEBUG org.nutz.ioc.impl.NutIoc - Get 'dataSource'<null>
+2013-02-21 00:51:07,431 [qtp1234909842-16] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Load definition
+2013-02-21 00:51:07,431 [qtp1234909842-16] DEBUG org.nutz.ioc.loader.map.MapLoader - Loading define for name=dataSource
+2013-02-21 00:51:07,437 [qtp1234909842-16] DEBUG org.nutz.ioc.loader.combo.ComboIocLoader - Found IocObject(dataSource) in IocLoader(JsonLoader@810440560)
+2013-02-21 00:51:07,438 [qtp1234909842-16] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Make...'dataSource'<null>
+2013-02-21 00:51:07,455 [qtp1234909842-16] DEBUG org.nutz.ioc.aop.impl.DefaultMirrorFactory - class com.alibaba.druid.pool.DruidDataSource , no config to enable AOP.
+2013-02-21 00:51:07,455 [qtp1234909842-16] DEBUG org.nutz.ioc.impl.ScopeContext - Save object 'dataSource' to [app] 
+2013-02-21 00:51:07,466 [qtp1234909842-16] ERROR com.alibaba.druid.pool.DruidAbstractDataSource - maxIdle is deprecated
+2013-02-21 00:51:07,484 [qtp1234909842-16] INFO  org.nutz.filepool.NutFilePool - Init file-pool by: ~/.nutz/tmp/dao/ [2000]
+2013-02-21 00:51:07,493 [qtp1234909842-16] DEBUG org.nutz.filepool.NutFilePool - file-pool.home: 'C:\Users\howe\.nutz\tmp\dao'
+2013-02-21 00:51:07,494 [qtp1234909842-16] INFO  org.nutz.filepool.NutFilePool - file-pool.cursor: 0
+2013-02-21 00:51:07,498 [qtp1234909842-16] DEBUG org.nutz.dao.jdbc.Jdbcs - Jdbcs init complete
+2013-02-21 00:51:07,564 [qtp1234909842-16] WARN  com.alibaba.druid.pool.DruidDataSource - Your dbType is mysql, recommend set testWhileIdle is true
+2013-02-21 00:51:09,262 [qtp1234909842-16] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2013-02-21 00:51:09,333 [qtp1234909842-16] DEBUG org.nutz.dao.impl.DaoSupport - Database info --> MYSQL:[MySQL - 5.5.29-29.4]
+2013-02-21 00:51:09,339 [qtp1234909842-16] DEBUG org.nutz.trans.Trans - trans_begain: 
+2013-02-21 00:51:09,416 [qtp1234909842-16] DEBUG org.nutz.dao.impl.sql.run.NutDaoExecutor - SELECT t.* FROM gs_qiuqian_qianwen T WHERE t.TYPEID='1'
+2013-02-21 00:51:09,475 [qtp1234909842-16] DEBUG org.nutz.dao.impl.sql.run.NutDaoExecutor - SQLException
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown table 't'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4120)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4052)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2503)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2664)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2794)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2322)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeQuery(DruidPooledPreparedStatement.java:210)
+	at org.nutz.dao.impl.sql.run.NutDaoExecutor._runSelect(NutDaoExecutor.java:151)
+	at org.nutz.dao.impl.sql.run.NutDaoExecutor.exec(NutDaoExecutor.java:42)
+	at org.nutz.dao.impl.DaoSupport$DaoExec.invoke(DaoSupport.java:242)
+	at org.nutz.dao.impl.sql.run.NutDaoRunner.run(NutDaoRunner.java:31)
+	at org.nutz.dao.impl.DaoSupport._exec(DaoSupport.java:197)
+	at org.nutz.dao.impl.DaoSupport.execute(DaoSupport.java:175)
+	at cn.gaoseng.tool.Lottery.getLottery(Lottery.java:42)
+	at cn.gaoseng.tool.Lottery.testIt(Lottery.java:71)
+	at cn.gaoseng.tool.Lottery$$NUTZAOP._aop_invoke(Lottery.java)
+	at org.nutz.aop.InterceptorChain.invoke(InterceptorChain.java:77)
+	at org.nutz.aop.InterceptorChain.doChain(InterceptorChain.java:57)
+	at org.nutz.aop.interceptor.TransactionInterceptor$1.run(TransactionInterceptor.java:37)
+	at org.nutz.trans.Trans.exec(Trans.java:165)
+	at org.nutz.aop.interceptor.TransactionInterceptor.filter(TransactionInterceptor.java:34)
+	at org.nutz.aop.InterceptorChain.doChain(InterceptorChain.java:60)
+	at cn.gaoseng.tool.Lottery$$NUTZAOP.testIt(Lottery.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.nutz.mvc.impl.processor.MethodInvokeProcessor.process(MethodInvokeProcessor.java:22)
+	at org.nutz.mvc.impl.processor.AbstractProcessor.doNext(AbstractProcessor.java:44)
+	at org.nutz.mvc.impl.processor.AdaptorProcessor.process(AdaptorProcessor.java:33)
+	at org.nutz.mvc.impl.processor.AbstractProcessor.doNext(AbstractProcessor.java:44)
+	at org.nutz.mvc.impl.processor.ActionFiltersProcessor.process(ActionFiltersProcessor.java:40)
+	at org.nutz.mvc.impl.processor.AbstractProcessor.doNext(AbstractProcessor.java:44)
+	at org.nutz.mvc.impl.processor.ModuleProcessor.process(ModuleProcessor.java:85)
+	at org.nutz.mvc.impl.processor.AbstractProcessor.doNext(AbstractProcessor.java:44)
+	at org.nutz.mvc.impl.processor.EncodingProcessor.process(EncodingProcessor.java:27)
+	at org.nutz.mvc.impl.processor.AbstractProcessor.doNext(AbstractProcessor.java:44)
+	at org.nutz.mvc.impl.processor.UpdateRequestAttributesProcessor.process(UpdateRequestAttributesProcessor.java:15)
+	at org.nutz.mvc.impl.NutActionChain.doChain(NutActionChain.java:40)
+	at org.nutz.mvc.impl.ActionInvoker.invoke(ActionInvoker.java:64)
+	at org.nutz.mvc.ActionHandler.handle(ActionHandler.java:31)
+	at org.nutz.mvc.NutFilter.doFilter(NutFilter.java:101)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1337)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:484)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1065)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:413)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:999)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:351)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:454)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:890)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:944)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Thread.java:722)
+2013-02-21 00:51:09,511 [qtp1234909842-16] ERROR org.nutz.mvc.impl.processor.FailProcessor - Catch handle error URI=/testit
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown table 't'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:525)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411)
+	at com.mysql.jdbc.Util.getInstance(Util.java:386)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4120)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4052)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2503)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2664)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2794)
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155)
+	at com.mysql.jdbc.PreparedStatement.executeQuery(PreparedStatement.java:2322)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.executeQuery(DruidPooledPreparedStatement.java:210)
+	at org.nutz.dao.impl.sql.run.NutDaoExecutor._runSelect(NutDaoExecutor.java:151)
+	at org.nutz.dao.impl.sql.run.NutDaoExecutor.exec(NutDaoExecutor.java:42)
+	at org.nutz.dao.impl.DaoSupport$DaoExec.invoke(DaoSupport.java:242)
+	at org.nutz.dao.impl.sql.run.NutDaoRunner.run(NutDaoRunner.java:31)
+	at org.nutz.dao.impl.DaoSupport._exec(DaoSupport.java:197)
+	at org.nutz.dao.impl.DaoSupport.execute(DaoSupport.java:175)
+	at cn.gaoseng.tool.Lottery.getLottery(Lottery.java:42)
+	at cn.gaoseng.tool.Lottery.testIt(Lottery.java:71)
+	at cn.gaoseng.tool.Lottery$$NUTZAOP._aop_invoke(Lottery.java)
+	at org.nutz.aop.InterceptorChain.invoke(InterceptorChain.java:77)
+	at org.nutz.aop.InterceptorChain.doChain(InterceptorChain.java:57)
+	at org.nutz.aop.interceptor.TransactionInterceptor$1.run(TransactionInterceptor.java:37)
+	at org.nutz.trans.Trans.exec(Trans.java:165)
+	at org.nutz.aop.interceptor.TransactionInterceptor.filter(TransactionInterceptor.java:34)
+	at org.nutz.aop.InterceptorChain.doChain(InterceptorChain.java:60)
+	at cn.gaoseng.tool.Lottery$$NUTZAOP.testIt(Lottery.java)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.nutz.mvc.impl.processor.MethodInvokeProcessor.process(MethodInvokeProcessor.java:22)
+	at org.nutz.mvc.impl.processor.AbstractProcessor.doNext(AbstractProcessor.java:44)
+	at org.nutz.mvc.impl.processor.AdaptorProcessor.process(AdaptorProcessor.java:33)
+	at org.nutz.mvc.impl.processor.AbstractProcessor.doNext(AbstractProcessor.java:44)
+	at org.nutz.mvc.impl.processor.ActionFiltersProcessor.process(ActionFiltersProcessor.java:40)
+	at org.nutz.mvc.impl.processor.AbstractProcessor.doNext(AbstractProcessor.java:44)
+	at org.nutz.mvc.impl.processor.ModuleProcessor.process(ModuleProcessor.java:85)
+	at org.nutz.mvc.impl.processor.AbstractProcessor.doNext(AbstractProcessor.java:44)
+	at org.nutz.mvc.impl.processor.EncodingProcessor.process(EncodingProcessor.java:27)
+	at org.nutz.mvc.impl.processor.AbstractProcessor.doNext(AbstractProcessor.java:44)
+	at org.nutz.mvc.impl.processor.UpdateRequestAttributesProcessor.process(UpdateRequestAttributesProcessor.java:15)
+	at org.nutz.mvc.impl.NutActionChain.doChain(NutActionChain.java:40)
+	at org.nutz.mvc.impl.ActionInvoker.invoke(ActionInvoker.java:64)
+	at org.nutz.mvc.ActionHandler.handle(ActionHandler.java:31)
+	at org.nutz.mvc.NutFilter.doFilter(NutFilter.java:101)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1337)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:484)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:119)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:524)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1065)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:413)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:192)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:999)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.eclipse.jetty.server.Server.handle(Server.java:351)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:454)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:890)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:944)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:634)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:230)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:77)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:609)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:45)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Thread.java:722)
+2013-02-21 00:51:30,317 [main] INFO  org.nutz.log.Logs - Nutz is licensed under the Apache License, Version 2.0 .
+Report bugs : https://github.com/nutzam/nutz/issues
+2013-02-21 00:51:30,532 [main] DEBUG org.nutz.resource.Scans - Locations for Scans:
+[JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-annotations-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-rewrite-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jsp-impl-2.2.2.b05.0.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\javax.servlet.jsp-2.2.0.v201112011158.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-xml-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\org.objectweb.asm_3.3.1.v201101071600.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-servlet-8.1.2.v20120308.jar], FileSystemResourceLocation [root=D:\project\gaoseng\build\classes], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-plus-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-server-8.1.2.v20120308.jar], JarResourceLocation [jarPath=file:/D:/project/gaoseng/WebContent/WEB-INF/lib/nutz-1.b.47-jdk6.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-deploy-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-policy-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-servlets-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-websocket-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\servlet-api-3.0.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-webapp-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\javax.el-2.2.0.v201108011116.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\javax.servlet.jsp.jstl-1.2.0.v201105211821.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-continuation-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-jndi-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\run-jetty-run-bootstrap-jetty8.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-ajp-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\org.apache.jasper.glassfish-2.2.2.v201112011158.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-security-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-http-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\org.apache.taglibs.standard.glassfish-1.2.0.v201112081803.jar], FileSystemResourceLocation [root=D:\project\gaoseng\.], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-io-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\javax.annotation_1.1.0.v201105051105.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-client-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-util-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-jmx-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-overlay-deployer-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\com.sun.el-2.2.0.v201108011116.jar]]
+2013-02-21 00:51:30,533 [main] INFO  org.nutz.resource.impl.ErrorResourceLocation - ErrorResourceLocation [loc=D:\project\gaoseng\WebContent\WEB-INF\classes], maybe it is in your classpath, but not exist
+2013-02-21 00:51:30,697 [main] DEBUG org.nutz.resource.Scans - Locations for Scans:
+[JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\httpclient-4.2.3.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-annotations-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\fastjson-1.1.27.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-rewrite-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jsp-impl-2.2.2.b05.0.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\javax.servlet.jsp-2.2.0.v201112011158.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\mysql-connector-java-5.1.23-bin.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-xml-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\druid-0.2.11.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\org.objectweb.asm_3.3.1.v201101071600.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-servlet-8.1.2.v20120308.jar], FileSystemResourceLocation [root=D:\project\gaoseng\build\classes], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-plus-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-server-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\dom4j-1.6.1.jar], JarResourceLocation [jarPath=file:/D:/project/gaoseng/WebContent/WEB-INF/lib/nutz-1.b.47-jdk6.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-deploy-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-policy-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-servlets-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\nutz-1.b.47-jdk6.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-websocket-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\log4j-1.2.17.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\servlet-api-3.0.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\httpclient-cache-4.2.3.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-webapp-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\javax.el-2.2.0.v201108011116.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\javax.servlet.jsp.jstl-1.2.0.v201105211821.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-continuation-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-jndi-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\httpmime-4.2.3.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\run-jetty-run-bootstrap-jetty8.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-ajp-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\org.apache.jasper.glassfish-2.2.2.v201112011158.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-security-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-http-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\org.apache.taglibs.standard.glassfish-1.2.0.v201112081803.jar], FileSystemResourceLocation [root=D:\project\gaoseng\.], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-io-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\javax.annotation_1.1.0.v201105051105.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\fluent-hc-4.2.3.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\commons-codec-1.6.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-client-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-util-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-jmx-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\jetty-overlay-deployer-8.1.2.v20120308.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\commons-logging-1.1.1.jar], JarResourceLocation [jarPath=D:\project\gaoseng\WebContent\WEB-INF\lib\httpcore-4.2.3.jar], ErrorResourceLocation [loc=D:\project\gaoseng\WebContent\WEB-INF\classes], JarResourceLocation [jarPath=D:\Program Files\springsource\sts-3.1.0.RELEASE\configuration\org.eclipse.osgi\bundles\961\1\.cp\lib\com.sun.el-2.2.0.v201108011116.jar]]
+2013-02-21 00:51:30,704 [main] DEBUG org.nutz.mvc.config.AbstractNutConfig - MainModule: <cn.gaoseng.MainModule>
+2013-02-21 00:51:30,730 [main] DEBUG org.nutz.mvc.config.AbstractNutConfig - Loading by class org.nutz.mvc.impl.NutLoading
+2013-02-21 00:51:30,733 [main] INFO  org.nutz.mvc.impl.NutLoading - Nutz Version : 1.b.47 
+2013-02-21 00:51:30,733 [main] INFO  org.nutz.mvc.impl.NutLoading - Nutz.Mvc[nutz] is initializing ...
+2013-02-21 00:51:30,733 [main] DEBUG org.nutz.mvc.impl.NutLoading - Web Container Information:
+2013-02-21 00:51:30,734 [main] DEBUG org.nutz.mvc.impl.NutLoading -  - Default Charset : UTF-8
+2013-02-21 00:51:30,734 [main] DEBUG org.nutz.mvc.impl.NutLoading -  - Current . path  : D:\project\gaoseng\.
+2013-02-21 00:51:30,734 [main] DEBUG org.nutz.mvc.impl.NutLoading -  - Java Version    : 1.7.0_15
+2013-02-21 00:51:30,734 [main] DEBUG org.nutz.mvc.impl.NutLoading -  - File separator  : \
+2013-02-21 00:51:30,734 [main] DEBUG org.nutz.mvc.impl.NutLoading -  - Timezone        : Asia/Shanghai
+2013-02-21 00:51:30,735 [main] DEBUG org.nutz.mvc.config.AbstractNutConfig - MainModule: <cn.gaoseng.MainModule>
+2013-02-21 00:51:30,735 [main] DEBUG org.nutz.mvc.impl.NutLoading - >> app.root = D:/project/gaoseng/WebContent
+2013-02-21 00:51:30,738 [main] DEBUG org.nutz.mvc.impl.NutLoading - @IocBy(org.nutz.mvc.ioc.provider.ComboIocProvider)
+2013-02-21 00:51:30,767 [main] DEBUG org.nutz.resource.Scans - Found 3 resource by src( ioc/ ) , regex( ^(.+[.])(js|json)$ )
+2013-02-21 00:51:30,782 [main] DEBUG org.nutz.ioc.loader.json.JsonLoader - Loaded 11 bean define from path=[ioc/] --> [txREPEATABLE_READ, dataSource, txREAD_COMMITTED, txNONE, dao, json, txSERIALIZABLE, $aop, txREAD_UNCOMMITTED, log, upload]
+2013-02-21 00:51:30,791 [main] DEBUG org.nutz.resource.Scans - Found 19 resource by src( cn/gaoseng/ ) , regex( ^.+[.]class$ )
+2013-02-21 00:51:30,817 [main] DEBUG org.nutz.ioc.loader.annotation.AnnotationIocLoader - Found a Class with Ioc-Annotation : class cn.gaoseng.tool.Lottery
+2013-02-21 00:51:30,823 [main] DEBUG org.nutz.ioc.loader.annotation.AnnotationIocLoader - Found a Class with Ioc-Annotation : class cn.gaoseng.module.TypeModule
+2013-02-21 00:51:30,826 [main] DEBUG org.nutz.ioc.loader.annotation.AnnotationIocLoader - Found a Class with Ioc-Annotation : class cn.gaoseng.module.qiuqian.ResultModule
+2013-02-21 00:51:30,827 [main] DEBUG org.nutz.ioc.loader.annotation.AnnotationIocLoader - Found a Class with Ioc-Annotation : class cn.gaoseng.module.qiuqian.QianwenModule
+2013-02-21 00:51:30,833 [main] DEBUG org.nutz.ioc.loader.annotation.AnnotationIocLoader - Found a Class with Ioc-Annotation : class cn.gaoseng.module.WechatModule
+2013-02-21 00:51:30,884 [main] DEBUG org.nutz.castor.Castors - Using 80 castor for Castors
+2013-02-21 00:51:30,886 [main] INFO  org.nutz.ioc.loader.annotation.AnnotationIocLoader - Scan complete ! Found 5 classes in 1 base-packages!
+beans = ["resultModule", "qianwenModule", "typeModule", "wechatModule", "lottery"]
+2013-02-21 00:51:30,893 [main] DEBUG org.nutz.mvc.config.AbstractNutConfig - MainModule: <cn.gaoseng.MainModule>
+2013-02-21 00:51:30,895 [main] INFO  org.nutz.mvc.impl.NutLoading - Build URL mapping by org.nutz.mvc.impl.UrlMappingImpl ...
+2013-02-21 00:51:30,897 [main] DEBUG org.nutz.mvc.impl.NutLoading - @Views(DefaultViewMaker)
+2013-02-21 00:51:30,961 [main] DEBUG org.nutz.mvc.impl.NutLoading - @ChainBy(org.nutz.mvc.impl.NutActionChainMaker)
+2013-02-21 00:51:30,964 [main] DEBUG org.nutz.mvc.impl.Loadings - module class location 'file:/D:/project/gaoseng/build/classes/'
+2013-02-21 00:51:30,964 [main] DEBUG org.nutz.mvc.impl.Loadings -  > scan 'cn.gaoseng'
+2013-02-21 00:51:30,970 [main] DEBUG org.nutz.resource.Scans - Found 19 resource by src( cn/gaoseng/ ) , regex( ^.+[.]class$ )
+2013-02-21 00:51:30,981 [main] DEBUG org.nutz.mvc.impl.Loadings -    >> add 'cn.gaoseng.tool.Lottery'
+2013-02-21 00:51:30,981 [main] DEBUG org.nutz.mvc.impl.Loadings -    >> add 'cn.gaoseng.module.TypeModule'
+2013-02-21 00:51:30,981 [main] DEBUG org.nutz.mvc.impl.Loadings -    >> add 'cn.gaoseng.module.qiuqian.ResultModule'
+2013-02-21 00:51:30,981 [main] DEBUG org.nutz.mvc.impl.Loadings -    >> add 'cn.gaoseng.module.qiuqian.QianwenModule'
+2013-02-21 00:51:30,982 [main] DEBUG org.nutz.mvc.impl.Loadings -    >> add 'cn.gaoseng.module.WechatModule'
+2013-02-21 00:51:30,994 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/wechat/gaoseng'           >> WechatModule.responseMsg(...)  : void       | @Ok(raw  ) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:31,001 [main] WARN  org.nutz.mvc.impl.processor.ViewProcessor - Not a good idea : Return String ,and using JsonView!! (Using @Ok("raw") or return map/list/pojo)--> WechatModule.checkSignature(...)
+2013-02-21 00:51:31,003 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/wechat/gaoseng'           >> WechatModule.checkSignature(...) : String     | @Ok(raw  ) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:31,004 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:31,005 [main] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Load definition
+2013-02-21 00:51:31,006 [main] DEBUG org.nutz.ioc.loader.map.MapLoader - Loading define for name=json
+2013-02-21 00:51:31,008 [main] DEBUG org.nutz.ioc.loader.combo.ComboIocLoader - Found IocObject(json) in IocLoader(JsonLoader@1457015443)
+2013-02-21 00:51:31,008 [main] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Make...'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:31,014 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get '$aop'<interface org.nutz.ioc.aop.config.AopConfigration>
+2013-02-21 00:51:31,014 [main] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Load definition
+2013-02-21 00:51:31,014 [main] DEBUG org.nutz.ioc.loader.map.MapLoader - Loading define for name=$aop
+2013-02-21 00:51:31,017 [main] DEBUG org.nutz.ioc.loader.combo.ComboIocLoader - Found IocObject($aop) in IocLoader(JsonLoader@1457015443)
+2013-02-21 00:51:31,017 [main] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Make...'$aop'<interface org.nutz.ioc.aop.config.AopConfigration>
+2013-02-21 00:51:31,017 [main] DEBUG org.nutz.ioc.impl.ScopeContext - Save object '$aop' to [app] 
+2013-02-21 00:51:31,035 [main] DEBUG org.nutz.ioc.aop.impl.DefaultMirrorFactory - class org.nutz.mvc.view.UTF8JsonView , no config to enable AOP.
+2013-02-21 00:51:31,035 [main] DEBUG org.nutz.ioc.impl.ScopeContext - Save object 'json' to [app] 
+2013-02-21 00:51:31,037 [main] DEBUG org.nutz.ioc.aop.impl.DefaultMirrorFactory - class org.nutz.json.JsonFormat , no config to enable AOP.
+2013-02-21 00:51:31,039 [main] DEBUG org.nutz.ioc.aop.impl.DefaultMirrorFactory - class org.nutz.json.JsonFormat , no config to enable AOP.
+2013-02-21 00:51:31,039 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/testit'                   >> Lottery.testIt(...)            : void       | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:31,048 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:31,048 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/add'                      >> TypeModule.add(...)            : boolean    | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:31,049 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:31,049 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/list'                     >> TypeModule.list(...)           : Object     | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:31,050 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:31,050 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/delete'                   >> TypeModule.delete(...)         : boolean    | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:31,052 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:31,052 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/update'                   >> TypeModule.update(...)         : boolean    | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:31,053 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:31,053 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/add'                      >> QianwenModule.add(...)         : boolean    | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:31,054 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:31,054 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/list'                     >> QianwenModule.list(...)        : Object     | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:31,055 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:31,086 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/delete'                   >> QianwenModule.delete(...)      : boolean    | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:31,087 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:31,088 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/update'                   >> QianwenModule.update(...)      : boolean    | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:31,089 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:31,090 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/add'                      >> ResultModule.add(...)          : boolean    | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:31,090 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:31,091 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/list'                     >> ResultModule.list(...)         : Object     | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:31,093 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:31,093 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/delete'                   >> ResultModule.delete(...)       : boolean    | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:31,094 [main] DEBUG org.nutz.ioc.impl.NutIoc - Get 'json'<interface org.nutz.mvc.View>
+2013-02-21 00:51:31,095 [main] DEBUG org.nutz.mvc.impl.UrlMappingImpl -    '/update'                   >> ResultModule.update(...)       : boolean    | @Ok(ioc:json) @Fail(json ) | by 0 Filters | (I:UTF-8/O:UTF-8)
+2013-02-21 00:51:31,095 [main] DEBUG org.nutz.mvc.impl.NutLoading - Localization: org.nutz.mvc.impl.NutMessageLoader('msg')  dft<>
+2013-02-21 00:51:31,098 [main] DEBUG org.nutz.resource.Scans - Found 2 resource by src( msg ) , regex( ^.+[.]properties$ )
+2013-02-21 00:51:31,098 [main] DEBUG org.nutz.mvc.impl.NutMessageLoader - Load Messages in 2 resource : [[NutResource[blog.properties], NutResource[en_US/blog.properties]]]
+2013-02-21 00:51:31,100 [main] DEBUG org.nutz.mvc.impl.NutMessageLoader - Message Loaded, size = 2
+2013-02-21 00:51:31,101 [main] INFO  org.nutz.mvc.impl.NutLoading - Nutz.Mvc[nutz] is up in 366ms
+2013-02-21 00:51:34,287 [qtp371314735-19] DEBUG org.nutz.mvc.impl.UrlMappingImpl - Found mapping for [GET] path=/testit : Lottery.testIt(...)
+2013-02-21 00:51:34,314 [qtp371314735-19] DEBUG org.nutz.ioc.impl.NutIoc - Get 'lottery'<class cn.gaoseng.tool.Lottery>
+2013-02-21 00:51:34,314 [qtp371314735-19] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Load definition
+2013-02-21 00:51:34,314 [qtp371314735-19] DEBUG org.nutz.ioc.loader.combo.ComboIocLoader - Found IocObject(lottery) in IocLoader(AnnotationIocLoader@1062435636)
+2013-02-21 00:51:34,314 [qtp371314735-19] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Make...'lottery'<class cn.gaoseng.tool.Lottery>
+2013-02-21 00:51:34,316 [qtp371314735-19] DEBUG org.nutz.ioc.impl.NutIoc - Get 'txREAD_COMMITTED'<interface org.nutz.aop.MethodInterceptor>
+2013-02-21 00:51:34,316 [qtp371314735-19] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Load definition
+2013-02-21 00:51:34,316 [qtp371314735-19] DEBUG org.nutz.ioc.loader.map.MapLoader - Loading define for name=txREAD_COMMITTED
+2013-02-21 00:51:34,316 [qtp371314735-19] DEBUG org.nutz.ioc.loader.combo.ComboIocLoader - Found IocObject(txREAD_COMMITTED) in IocLoader(JsonLoader@1457015443)
+2013-02-21 00:51:34,316 [qtp371314735-19] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Make...'txREAD_COMMITTED'<interface org.nutz.aop.MethodInterceptor>
+2013-02-21 00:51:34,317 [qtp371314735-19] DEBUG org.nutz.ioc.impl.ScopeContext - Save object 'txREAD_COMMITTED' to [app] 
+2013-02-21 00:51:34,319 [qtp371314735-19] DEBUG org.nutz.aop.asm.AsmClassAgent - AsmClassAgent will define class in Version 50
+2013-02-21 00:51:34,339 [qtp371314735-19] DEBUG org.nutz.ioc.impl.ScopeContext - Save object 'lottery' to [app] 
+2013-02-21 00:51:34,340 [qtp371314735-19] DEBUG org.nutz.ioc.impl.NutIoc - Get 'dao'<null>
+2013-02-21 00:51:34,341 [qtp371314735-19] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Load definition
+2013-02-21 00:51:34,341 [qtp371314735-19] DEBUG org.nutz.ioc.loader.map.MapLoader - Loading define for name=dao
+2013-02-21 00:51:34,342 [qtp371314735-19] DEBUG org.nutz.ioc.loader.combo.ComboIocLoader - Found IocObject(dao) in IocLoader(JsonLoader@1457015443)
+2013-02-21 00:51:34,343 [qtp371314735-19] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Make...'dao'<null>
+2013-02-21 00:51:34,353 [qtp371314735-19] DEBUG org.nutz.ioc.aop.impl.DefaultMirrorFactory - class org.nutz.dao.impl.NutDao , no config to enable AOP.
+2013-02-21 00:51:34,353 [qtp371314735-19] DEBUG org.nutz.ioc.impl.ScopeContext - Save object 'dao' to [app] 
+2013-02-21 00:51:34,361 [qtp371314735-19] DEBUG org.nutz.ioc.impl.NutIoc - Get 'dataSource'<null>
+2013-02-21 00:51:34,362 [qtp371314735-19] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Load definition
+2013-02-21 00:51:34,362 [qtp371314735-19] DEBUG org.nutz.ioc.loader.map.MapLoader - Loading define for name=dataSource
+2013-02-21 00:51:34,368 [qtp371314735-19] DEBUG org.nutz.ioc.loader.combo.ComboIocLoader - Found IocObject(dataSource) in IocLoader(JsonLoader@1457015443)
+2013-02-21 00:51:34,369 [qtp371314735-19] DEBUG org.nutz.ioc.impl.NutIoc - 	 >> Make...'dataSource'<null>
+2013-02-21 00:51:34,387 [qtp371314735-19] DEBUG org.nutz.ioc.aop.impl.DefaultMirrorFactory - class com.alibaba.druid.pool.DruidDataSource , no config to enable AOP.
+2013-02-21 00:51:34,387 [qtp371314735-19] DEBUG org.nutz.ioc.impl.ScopeContext - Save object 'dataSource' to [app] 
+2013-02-21 00:51:34,400 [qtp371314735-19] ERROR com.alibaba.druid.pool.DruidAbstractDataSource - maxIdle is deprecated
+2013-02-21 00:51:34,419 [qtp371314735-19] INFO  org.nutz.filepool.NutFilePool - Init file-pool by: ~/.nutz/tmp/dao/ [2000]
+2013-02-21 00:51:34,420 [qtp371314735-19] DEBUG org.nutz.filepool.NutFilePool - file-pool.home: 'C:\Users\howe\.nutz\tmp\dao'
+2013-02-21 00:51:34,420 [qtp371314735-19] INFO  org.nutz.filepool.NutFilePool - file-pool.cursor: 0
+2013-02-21 00:51:34,425 [qtp371314735-19] DEBUG org.nutz.dao.jdbc.Jdbcs - Jdbcs init complete
+2013-02-21 00:51:34,482 [qtp371314735-19] WARN  com.alibaba.druid.pool.DruidDataSource - Your dbType is mysql, recommend set testWhileIdle is true
+2013-02-21 00:51:36,145 [qtp371314735-19] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2013-02-21 00:51:36,213 [qtp371314735-19] DEBUG org.nutz.dao.impl.DaoSupport - Database info --> MYSQL:[MySQL - 5.5.29-29.4]
+2013-02-21 00:51:36,219 [qtp371314735-19] DEBUG org.nutz.trans.Trans - trans_begain: 
+2013-02-21 00:51:36,285 [qtp371314735-19] DEBUG org.nutz.dao.impl.sql.run.NutDaoExecutor - SELECT t.* FROM gs_qiuqian_qianwen t WHERE t.TYPEID='1'
+2013-02-21 00:51:47,634 [qtp371314735-17] DEBUG org.nutz.mvc.impl.UrlMappingImpl - Found mapping for [GET] path=/testit : Lottery.testIt(...)
+2013-02-21 00:51:47,634 [qtp371314735-17] DEBUG org.nutz.ioc.impl.NutIoc - Get 'lottery'<class cn.gaoseng.tool.Lottery>
+2013-02-21 00:51:47,634 [qtp371314735-17] DEBUG org.nutz.trans.Trans - trans_begain: 
+2013-02-21 00:51:47,684 [qtp371314735-17] DEBUG org.nutz.dao.impl.sql.run.NutDaoExecutor - SELECT t.* FROM gs_qiuqian_qianwen t WHERE t.TYPEID='1'
+2013-02-21 00:51:56,995 [qtp371314735-19] DEBUG org.nutz.mvc.impl.UrlMappingImpl - Found mapping for [GET] path=/testit : Lottery.testIt(...)
+2013-02-21 00:51:56,995 [qtp371314735-19] DEBUG org.nutz.ioc.impl.NutIoc - Get 'lottery'<class cn.gaoseng.tool.Lottery>
+2013-02-21 00:51:56,995 [qtp371314735-19] DEBUG org.nutz.trans.Trans - trans_begain: 
+2013-02-21 00:51:57,039 [qtp371314735-19] DEBUG org.nutz.dao.impl.sql.run.NutDaoExecutor - SELECT t.* FROM gs_qiuqian_qianwen t WHERE t.TYPEID='1'
