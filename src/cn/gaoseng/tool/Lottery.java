@@ -1,17 +1,69 @@
 package cn.gaoseng.tool;
 
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import cn.gaoseng.bean.qiuqian.Qianwen;
+import org.nutz.dao.Dao;
+import org.nutz.dao.Sqls;
+import org.nutz.dao.sql.Sql;
+import org.nutz.dao.sql.SqlCallback;
+import org.nutz.ioc.loader.annotation.IocBean;
 
+import cn.gaoseng.bean.qiuqian.Qianwen;
+//@IocBean(fields = {"dao"})
 public class Lottery {
+//	private static Dao dao;
 
 	public static String getLottery(String typeId) {
 
+//		String rtn = "";
+//		List<Qianwen> qws = new ArrayList<Qianwen>();
+//		Sql sql = Sqls.create("SELECT t.* FROM gs_qiuqian_qianwen T WHERE t.TYPEID=@TYPEID");
+//		//通过typeid取gs_qiuqian_qianwen的id 
+//		sql.params().set("TYPEID",typeId);
+//		sql.setCallback(new SqlCallback() {
+//			public Object invoke(Connection conn, ResultSet rs, Sql sql) throws SQLException {
+//				List<Qianwen> list = new ArrayList<Qianwen>();
+//				while (rs.next()){
+//					list.add(new Qianwen(Integer.parseInt(rs.getString("id"))));		
+//					System.out.println(Integer.parseInt(rs.getString("id")));
+//				}
+//				return list;
+//			}
+//			
+//		});
+//		dao.execute(sql);
+//		qws = sql.getList(Qianwen.class);
+//		List<Double> orignalRates = new ArrayList<Double>(qws.size());
+//
+//		for (Qianwen qw : qws) {
+//			double probability = (double)(1.0/qws.size());
+//			if (probability < 0) {
+//				probability = 0;
+//			}
+//			orignalRates.add(probability);
+//		}
+//
+//		Map<Integer, Integer> count = new HashMap<Integer, Integer>();
+//		double num = 1;
+//		for (int i = 0; i < num; i++) {
+//			int orignalIndex = LotteryUtil.lottery(orignalRates);
+//
+//			Integer value = count.get(orignalIndex);
+//			count.put(orignalIndex, value == null ? 1 : value + 1);
+//		}
+//
+//		for (Entry<Integer, Integer> entry : count.entrySet()) {
+//			rtn = qws.get(entry.getKey()).toString();
+//		}
+//		return rtn;
+		
 		String rtn = "";
 		List<Qianwen> qws = new ArrayList<Qianwen>();
 		if (typeId.equals("1")) {
@@ -25,36 +77,36 @@ public class Lottery {
 			qws.add(new Qianwen(8));
 			qws.add(new Qianwen(9));
 			qws.add(new Qianwen(10));
-//			qws.add(new Qianwen(11));
-//			qws.add(new Qianwen(12));
-//			qws.add(new Qianwen(13));
-//			qws.add(new Qianwen(14));
-//			qws.add(new Qianwen(15));
-//			qws.add(new Qianwen(16));
-//			qws.add(new Qianwen(17));
-//			qws.add(new Qianwen(18));
-//			qws.add(new Qianwen(19));
-//			qws.add(new Qianwen(20));
-//			qws.add(new Qianwen(21));
-//			qws.add(new Qianwen(22));
-//			qws.add(new Qianwen(23));
-//			qws.add(new Qianwen(24));
-//			qws.add(new Qianwen(25));
-//			qws.add(new Qianwen(26));
-//			qws.add(new Qianwen(27));
-//			qws.add(new Qianwen(28));
-//			qws.add(new Qianwen(29));
-//			qws.add(new Qianwen(30));
-//			qws.add(new Qianwen(31));
-//			qws.add(new Qianwen(32));
-//			qws.add(new Qianwen(33));
-//			qws.add(new Qianwen(34));
-//			qws.add(new Qianwen(35));
-//			qws.add(new Qianwen(36));
-//			qws.add(new Qianwen(37));
-//			qws.add(new Qianwen(38));
-//			qws.add(new Qianwen(39));
-//			qws.add(new Qianwen(40));
+			qws.add(new Qianwen(11));
+			qws.add(new Qianwen(12));
+			qws.add(new Qianwen(13));
+			qws.add(new Qianwen(14));
+			qws.add(new Qianwen(15));
+			qws.add(new Qianwen(16));
+			qws.add(new Qianwen(17));
+			qws.add(new Qianwen(18));
+			qws.add(new Qianwen(19));
+			qws.add(new Qianwen(20));
+			qws.add(new Qianwen(21));
+			qws.add(new Qianwen(22));
+			qws.add(new Qianwen(23));
+			qws.add(new Qianwen(24));
+			qws.add(new Qianwen(25));
+			qws.add(new Qianwen(26));
+			qws.add(new Qianwen(27));
+			qws.add(new Qianwen(28));
+			qws.add(new Qianwen(29));
+			qws.add(new Qianwen(30));
+			qws.add(new Qianwen(31));
+			qws.add(new Qianwen(32));
+			qws.add(new Qianwen(33));
+			qws.add(new Qianwen(34));
+			qws.add(new Qianwen(35));
+			qws.add(new Qianwen(36));
+			qws.add(new Qianwen(37));
+			qws.add(new Qianwen(38));
+			qws.add(new Qianwen(39));
+			qws.add(new Qianwen(40));
 //			qws.add(new Qianwen(41));
 //			qws.add(new Qianwen(42));
 //			qws.add(new Qianwen(43));
@@ -115,74 +167,13 @@ public class Lottery {
 //			qws.add(new Qianwen(98));
 //			qws.add(new Qianwen(99));
 //			qws.add(new Qianwen(100));
-		} else if (typeId.equals("2")) {
-			qws.add(new Qianwen(101));
-			qws.add(new Qianwen(102));
-			qws.add(new Qianwen(103));
-			qws.add(new Qianwen(104));
-			qws.add(new Qianwen(105));
-			qws.add(new Qianwen(106));
-			qws.add(new Qianwen(107));
-			qws.add(new Qianwen(108));
-			qws.add(new Qianwen(109));
-			qws.add(new Qianwen(110));
-			qws.add(new Qianwen(111));
-			qws.add(new Qianwen(112));
-			qws.add(new Qianwen(113));
-			qws.add(new Qianwen(114));
-			qws.add(new Qianwen(115));
-			qws.add(new Qianwen(116));
-			qws.add(new Qianwen(117));
-			qws.add(new Qianwen(118));
-			qws.add(new Qianwen(119));
-			qws.add(new Qianwen(120));
-			qws.add(new Qianwen(121));
-			qws.add(new Qianwen(122));
-			qws.add(new Qianwen(123));
-			qws.add(new Qianwen(124));
-			qws.add(new Qianwen(125));
-			qws.add(new Qianwen(126));
-			qws.add(new Qianwen(127));
-			qws.add(new Qianwen(128));
-			qws.add(new Qianwen(129));
-			qws.add(new Qianwen(130));
-			qws.add(new Qianwen(131));
-			qws.add(new Qianwen(132));
-			qws.add(new Qianwen(133));
-			qws.add(new Qianwen(134));
-			qws.add(new Qianwen(135));
-			qws.add(new Qianwen(136));
-			qws.add(new Qianwen(137));
-			qws.add(new Qianwen(138));
-			qws.add(new Qianwen(139));
-			qws.add(new Qianwen(140));
-			qws.add(new Qianwen(141));
-			qws.add(new Qianwen(142));
-			qws.add(new Qianwen(143));
-			qws.add(new Qianwen(144));
-			qws.add(new Qianwen(145));
-			qws.add(new Qianwen(146));
-			qws.add(new Qianwen(147));
-			qws.add(new Qianwen(148));
-			qws.add(new Qianwen(149));
-			qws.add(new Qianwen(150));
-			qws.add(new Qianwen(151));
-			qws.add(new Qianwen(152));
-			qws.add(new Qianwen(153));
-			qws.add(new Qianwen(154));
-			qws.add(new Qianwen(155));
-			qws.add(new Qianwen(156));
-			qws.add(new Qianwen(157));
-			qws.add(new Qianwen(158));
-			qws.add(new Qianwen(159));
-			qws.add(new Qianwen(160));
 		} else {
 			qws.add(new Qianwen(0));
 		}
 		List<Double> orignalRates = new ArrayList<Double>(qws.size());
 
 		for (Qianwen qw : qws) {
-			double probability = (double)(1.0/10);
+			double probability = (double)(1.0/qws.size());
 			if (probability < 0) {
 				probability = 0;
 			}
@@ -202,5 +193,10 @@ public class Lottery {
 			rtn = qws.get(entry.getKey()).toString();
 		}
 		return rtn;
+	}
+	
+	public static void main(String[] args) {
+		
+		System.out.print(getLottery("1"));
 	}
 }

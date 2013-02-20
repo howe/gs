@@ -15,7 +15,7 @@ import org.nutz.log.Logs;
 
 import cn.gaoseng.bean.Type;
 
-@At("/CommonType")
+//@At("/CommonType")
 @IocBean(fields={"dao"})
 public class TypeModule extends EntityService<Type>{
 

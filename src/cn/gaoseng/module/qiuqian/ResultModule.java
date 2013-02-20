@@ -15,7 +15,7 @@ import org.nutz.log.Logs;
 
 import cn.gaoseng.bean.qiuqian.Result;
 
-@At("/QiuqianResult")
+//@At("/QiuqianResult")
 @IocBean(fields={"dao"})
 public class ResultModule extends EntityService<Result>{
 

@@ -15,7 +15,7 @@ import org.nutz.log.Logs;
 
 import cn.gaoseng.bean.qiuqian.Qianwen;
 
-@At("/QiuqianQianwen")
+//@At("/QiuqianQianwen")
 @IocBean(fields={"dao"})
 public class QianwenModule extends EntityService<Qianwen>{
 

@@ -81,7 +81,7 @@ public class Qianwen {
 	public void setTypeId(Integer typeId) {
 		this.typeId = typeId;
 	}
-	@Override
+
 	public String toString() {
 		return String.valueOf(id);
 	}
