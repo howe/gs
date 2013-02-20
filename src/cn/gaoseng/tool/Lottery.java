@@ -180,7 +180,14 @@ public class Lottery {
 			qws.add(new Qianwen(0));
 		}
 		List<Double> orignalRates = new ArrayList<Double>(qws.size());
-		orignalRates.add((double)(1.0/10));
+
+		for (Qianwen qw : qws) {
+			double probability = (double)(1.0/10);
+			if (probability < 0) {
+				probability = 0;
+			}
+			orignalRates.add(probability);
+		}
 
 		Map<Integer, Integer> count = new HashMap<Integer, Integer>();
 		double num = 1;

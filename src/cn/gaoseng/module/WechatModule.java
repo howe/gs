@@ -38,7 +38,7 @@ import cn.gaoseng.tool.EncoderHelper;
  * @author yangq(qi.yang.cn@gmail.com) 2013-2-17
  */
 
-@IocBean
+@IocBean(fields = {"dao"})
 public class WechatModule {
 
 	private static final Log log = Logs.get();
@@ -105,22 +105,10 @@ public class WechatModule {
 		 */
 		if (content.toLowerCase().equals("qq") || content.equals("求签")) {
 
-//			StringBuilder tmp = new StringBuilder();
-//
-//			Tianqi qianqi = new Tianqi();
-//			qianqi = Qihou.queryTianqi("101221704");
-//			System.out.print(qianqi.getCity());
-//			tmp.append("施主 今年财运滚滚来[色]");
-//			tmp.append("九华山实时温度: " + qianqi.getTemp());
-//			tmp.append("  相对湿度: " + qianqi.getSd());
-//			tmp.append("  风力情况: " + qianqi.getWd());
-//			tmp.append("(" + qianqi.getWs() + ")");
-//			tmp.append("  检测时间: " + qianqi.getTime());
-
 			Date date = new Date();
 			DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
 			
-			Sql sql1 = Sqls.create("SELECT t.* FROM gs_qiuqian_result t WHERE t.openId = @OPENID AND t.createTime = @CREATETIME");
+			Sql sql1 = Sqls.create("SELECT t.* FROM gs_qiuqian_result t WHERE t.OPENID = @OPENID AND t.CREATETIME = @CREATETIME");
 			sql1.params().set("CREATETIME", format.format(date).substring(0, 10));
 			sql1.params().set("OPENID", fromUserName);
 			sql1.setCallback(new SqlCallback() {
@@ -135,10 +123,10 @@ public class WechatModule {
 			Map<String, String> map = sql1.getObject(HashMap.class);
 			if (map.size() == 0){
 				String qwId = cn.gaoseng.tool.Lottery.getLottery("1");
-				Sql sql2 = Sqls.create("SELECT t.* FROM gs_qiuqian_qianwen t WHERE t.id=@ID");
+				Sql sql2 = Sqls.create("SELECT t.* FROM gs_qiuqian_qianwen t WHERE t.ID=@ID");
 				sql2.params().set("ID", qwId);
 
-				Sql sql3 = Sqls.create("insert into gs_qiuqian_result(openId,createTime,qwId) Values(@OPENID,@CREATETIME,@QWID)");
+				Sql sql3 = Sqls.create("INSERT INTO gs_qiuqian_result(OPENID,CREATETIME,QWID) VALUES(@OPENID,@CREATETIME,@QWID)");
 				sql3.params().set("QWID", qwId);
 				sql3.params().set("OPENID", fromUserName);
 				sql3.params().set("CREATETIME", format.format(date).substring(0, 10));
@@ -178,8 +166,8 @@ public class WechatModule {
 							);
 				}
 			}else{
-				Sql sql4 = Sqls.create("SELECT t.* FROM gs_qiuqian_qianwen t WHERE t.id=@ID");
-				sql4.params().set("ID", map.get("id"));
+				Sql sql4 = Sqls.create("SELECT t.* FROM gs_qiuqian_qianwen t WHERE t.ID=@ID");
+				sql4.params().set("ID", map.get("qwid"));
 				sql4.setCallback(new SqlCallback() {
 					public Object invoke(Connection conn, ResultSet rs, Sql sql4) throws SQLException {
 						Map<String, String> map2 = new HashMap<String, String>();
